@@ -54,14 +54,4 @@ Visit your app on: `http://localhost:3000`. You can interact with your smart con
 - Edit your deployment scripts in `packages/hardhat/deploy`
 - Edit your smart contract test in: `packages/hardhat/test`. To run test use `yarn hardhat:test`
 
-## Documentation
 
-Visit our [docs](https://docs.scaffoldeth.io) to learn how to start building with Scaffold-ETH 2.
-
-To know more about its features, check out our [website](https://scaffoldeth.io).
-
-## Contributing to Scaffold-ETH 2
-
-We welcome contributions to Scaffold-ETH 2!
-
-Please see [CONTRIBUTING.MD](https://github.com/scaffold-eth/scaffold-eth-2/blob/main/CONTRIBUTING.md) for more information and guidelines for contributing to Scaffold-ETH 2.
