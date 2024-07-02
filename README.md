@@ -1,8 +1,6 @@
 # 🏗 YouTube Tutorial Link: https://youtu.be/ntQnAa6khZw
 ![thumbnail linea](https://github.com/kinghonest45/LineaSmartContractTutorial/assets/174223028/4e1662c1-5443-4c52-b0d5-67671f08f02c)
 
-
-
 ## Requirements
 
 Before you begin, you need to install the following tools:
@@ -54,4 +52,34 @@ Visit your app on: `http://localhost:3000`. You can interact with your smart con
 - Edit your deployment scripts in `packages/hardhat/deploy`
 - Edit your smart contract test in: `packages/hardhat/test`. To run test use `yarn hardhat:test`
 
+## Smart contract
 
+# FrogJump.sol:
+```
+// SPDX-LICENSE-IDENTIFIER:MIT
+pragma solidity >=0.8.0;
+
+interface IFrog{
+    function name() external view returns (string memory);
+    function jumps() external view returns (uint256);
+}
+
+interface IJumper{
+    function jump() external;
+}
+
+contract FrogJump is IFrog ,IJumper{
+    string public name;
+    uint256 public jumps;
+
+    constructor(string memory _name){
+        name = _name;
+    }
+
+    function jump() public{
+        jumps++;
+    }
+
+
+}
+```
