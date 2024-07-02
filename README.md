@@ -54,10 +54,10 @@ Visit your app on: `http://localhost:3000`. You can interact with your smart con
 
 ## Smart contract
 
-# FrogJump.sol:
+### FrogJump.sol:
 ```
 // SPDX-LICENSE-IDENTIFIER:MIT
-pragma solidity >=0.8.0;
+pragma solidity ^0.8.0;
 
 interface IFrog{
     function name() external view returns (string memory);
@@ -82,4 +82,27 @@ contract FrogJump is IFrog ,IJumper{
 
 
 }
+```
+
+### _deploy_frogs.ts:
+
+```
+import { HardhatRuntimeEnvironment } from "hardhat/types";
+import { DeployFunction } from "hardhat-deploy/types";
+
+
+const deployFrogJump : DeployFunction = async function(hre: HardhatRuntimeEnvironment){
+    const {deployer} = await hre.getNamedAccounts();
+    const {deploy} = hre.deployments;
+
+    await deploy("FrogJump",{
+        from:deployer,
+        args: ["Froggy"],
+        log:true,
+        autoMine:true,
+    });
+};
+
+
+export default deployFrogJump;
 ```
