@@ -338,4 +338,4 @@ const config: HardhatUserConfig = {
 export default config;
 ```
 
-🎉 Congratulations. You've successfully built and deployed a Smart contract on Linea! You have done a great job. Happy coding! 🐸✨
+🎉 Congratulations. You've successfully built and deployed a Smart contract on Linea sepolia! You have done a great job. Happy coding! 🐸✨
