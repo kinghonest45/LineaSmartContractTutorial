@@ -1,4 +1,4 @@
-# 🏗 YouTube Tutorial Link: https://youtu.be/ntQnAa6khZw
+
 ![thumbnail linea](https://github.com/kinghonest45/LineaSmartContractTutorial/assets/174223028/4e1662c1-5443-4c52-b0d5-67671f08f02c)
 
 ## Requirements
